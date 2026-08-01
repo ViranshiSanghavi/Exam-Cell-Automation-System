@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@drawable/background">
+
+    <TextView
+        android:id="@+id/welcomeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome, Teacher!"
+        android:textSize="20sp"
+        android:padding="10dp"
+        android:textColor="@android:color/black"/>
+
+    <GridLayout
+        android:id="@+id/dashboardGrid"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:columnCount="2"
+        android:rowCount="3"
+        android:alignmentMode="alignMargins"
+        android:columnOrderPreserved="false"
+        android:useDefaultMargins="true">
+
+        <!-- Attendance Upload Button -->
+        <LinearLayout
+            android:id="@+id/attendanceUploadButton"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:background="#d3d3d3"
+            android:elevation="2dp">
+
+            <ImageView
+                android:layout_width="182dp"
+                android:layout_height="135dp"
+                android:src="@drawable/ic_attendance_upload" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Attendance Upload"
+                android:textColor="@android:color/black"
+                android:layout_marginTop="8dp"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <!-- Marks Upload Button -->
+        <LinearLayout
+            android:id="@+id/marksUploadButton"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:background="#d3d3d3"
+            android:elevation="2dp">
+
+            <ImageView
+                android:layout_width="167dp"
+                android:layout_height="136dp"
+                android:src="@drawable/ic_marks_upload" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Marks Upload"
+                android:textColor="@android:color/black"
+                android:layout_marginTop="8dp"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <!-- Question Paper Upload Button -->
+        <LinearLayout
+            android:id="@+id/questionPaperUploadButton"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:background="#d3d3d3"
+            android:elevation="2dp">
+
+            <ImageView
+                android:layout_width="142dp"
+                android:layout_height="129dp"
+                android:src="@drawable/ic_question_paper_upload" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Question Paper Upload"
+                android:textColor="@android:color/black"
+                android:layout_marginTop="8dp"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <!-- Notice Button -->
+        <LinearLayout
+            android:id="@+id/noticeButton"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:background="#d3d3d3"
+            android:elevation="2dp">
+
+            <ImageView
+                android:layout_width="182dp"
+                android:layout_height="122dp"
+                android:src="@drawable/ic_notice" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Notice"
+                android:textColor="@android:color/black"
+                android:layout_marginTop="8dp"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <!-- Answer Paper Rechecking Button -->
+        <LinearLayout
+            android:id="@+id/answerPaperRecheckingButton"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:background="#d3d3d3"
+            android:elevation="2dp">
+
+            <ImageView
+                android:layout_width="154dp"
+                android:layout_height="131dp"
+                android:src="@drawable/ic_answer_paper_rechecking" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Answer Paper Rechecking"
+                android:textColor="@android:color/black"
+                android:layout_marginTop="8dp"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <!-- Profile Settings Button -->
+        <LinearLayout
+            android:id="@+id/profileSettingsButton"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:background="#d3d3d3"
+            android:elevation="2dp">
+
+            <ImageView
+                android:layout_width="158dp"
+                android:layout_height="128dp"
+                android:src="@drawable/ic_profile_settings" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Consolidated Report"
+                android:textColor="@android:color/black"
+                android:layout_marginTop="8dp"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+    </GridLayout>
+</LinearLayout>

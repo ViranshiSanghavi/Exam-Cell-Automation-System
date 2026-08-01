@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Exam Time</string>
+    <string name="image_desc">Exam Time</string>
+    <string name="settings_desc">Settings</string>
+    <string name="notification_desc">Notification Bell</string>
+
+    <!-- Year options for the spinner -->
+    <string-array name="year_array">
+        <item>FY</item>
+        <item>SY</item>
+        <item>TY</item>
+    </string-array>
+
+    <!-- Department options for the spinner -->
+    <string-array name="department_array">
+        <item>IT</item>
+        <item>DS</item>
+        <item>AI/ML</item>
+    </string-array>
+
+    <string-array name="user_roles">
+        <item>Teacher</item>
+        <item>Student</item>
+    </string-array>
+
+    <string-array name="student_classes">
+        <item>FY</item>
+        <item>SY</item>
+        <item>TY</item>
+    </string-array>
+
+    <string-array name="student_departments">
+        <item>IT</item>
+        <item>DS</item>
+        <item>AI/ML</item>
+    </string-array>
+
+    <string-array name="recipient_options">
+        <item>Teacher</item>
+        <item>Student</item>
+        <item>All</item>
+    </string-array>
+</resources>

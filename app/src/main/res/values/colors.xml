@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="background">#F3F6F9</color>
+    <color name="textColor">#020202</color>
+    <color name="hintColor">#000000</color>
+    <color name="borderColor">#E4E9F2</color>
+    <color name="buttonColor">#bc1723</color> <!-- Red color for the button -->
+    <color name="buttonColorPressed">#a10f1a</color> <!-- Darker red for the pressed state -->
+    <color name="white">#FFFFFF</color>
+    <color name="teal_200">#03DAC5</color>
+    <color name="teal_700">#018786</color>
+    <color name="black">#000000</color>
+    <color name="headerTeal">#018786</color>
+    <color name="light_gray">#D3D3D3</color>
+    <color name="purple_500">#6200EE</color>
+</resources>

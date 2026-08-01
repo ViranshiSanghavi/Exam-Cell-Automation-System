@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@drawable/background">
+
+    <TextView
+        android:id="@+id/welcomeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome, Admin!"
+        android:textSize="20sp"
+        android:padding="10dp"
+        android:textColor="@android:color/black"/>
+
+    <GridLayout
+        android:id="@+id/dashboardGrid"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:columnCount="2"
+        android:rowCount="2"
+        android:alignmentMode="alignMargins"
+        android:columnOrderPreserved="false"
+        android:useDefaultMargins="true">
+
+        <!-- Deadline Tracker Button -->
+        <LinearLayout
+            android:id="@+id/deadlineTrackerButton"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:background="#d3d3d3"
+            android:elevation="2dp">
+
+            <ImageView
+                android:layout_width="182dp"
+                android:layout_height="135dp"
+                android:src="@drawable/ic_deadline_tracker" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Deadline Tracker"
+                android:textColor="@android:color/black"
+                android:layout_marginTop="8dp"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <!-- Question Paper Button -->
+        <LinearLayout
+            android:id="@+id/questionPaperButton"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:background="#d3d3d3"
+            android:elevation="2dp">
+
+            <ImageView
+                android:layout_width="167dp"
+                android:layout_height="136dp"
+                android:src="@drawable/ic_question_paper" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Question Paper"
+                android:textColor="@android:color/black"
+                android:layout_marginTop="8dp"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <!-- User Administration Button -->
+        <LinearLayout
+            android:id="@+id/userAdministrationButton"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:background="#d3d3d3"
+            android:elevation="2dp">
+
+            <ImageView
+                android:layout_width="142dp"
+                android:layout_height="129dp"
+                android:src="@drawable/ic_user_administration" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="User Administration"
+                android:textColor="@android:color/black"
+                android:layout_marginTop="8dp"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <!-- Notice Board Button -->
+        <LinearLayout
+            android:id="@+id/noticeBoardButton"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:background="#d3d3d3"
+            android:elevation="2dp">
+
+            <ImageView
+                android:layout_width="182dp"
+                android:layout_height="122dp"
+                android:src="@drawable/ic_notice_board" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Notice Board"
+                android:textColor="@android:color/black"
+                android:layout_marginTop="8dp"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </GridLayout>
+</LinearLayout>

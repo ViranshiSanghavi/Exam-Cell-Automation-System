@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="Theme.Login" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <!-- Primary branding color (Red) -->
+        <item name="colorPrimary">@color/buttonColor</item>
+
+        <!-- Darker variant of the primary color -->
+        <item name="colorPrimaryVariant">#a10f1a</item>
+
+        <!-- Color for text on the primary color (White) -->
+        <item name="colorOnPrimary">@color/white</item>
+
+        <!-- Secondary branding color (Red) -->
+        <item name="colorSecondary">@color/buttonColor</item>
+
+        <!-- Color for text on the secondary color (Black) -->
+        <item name="colorOnSecondary">@color/black</item>
+
+        <!-- Status bar color -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+    </style>
+</resources>

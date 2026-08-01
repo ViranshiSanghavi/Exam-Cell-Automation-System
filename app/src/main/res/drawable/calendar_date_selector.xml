@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Selected state -->
+    <item android:state_selected="true">
+        <shape android:shape="oval">
+            <solid android:color="#E3F2FD"/>
+        </shape>
+    </item>
+    <!-- Highlighted state for exams -->
+    <item android:state_activated="true">
+        <shape android:shape="oval">
+            <solid android:color="#FFE0E0"/>  <!-- Light red for exams -->
+        </shape>
+    </item>
+    <!-- Default state -->
+    <item>
+        <shape android:shape="oval">
+            <solid android:color="#00000000"/>  <!-- Transparent -->
+        </shape>
+    </item>
+</selector>

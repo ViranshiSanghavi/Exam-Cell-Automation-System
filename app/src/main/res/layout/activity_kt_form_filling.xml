@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="KT Payment"
+        android:textSize="20sp"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginBottom="8dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="4dp">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_marginEnd="4dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Roll Number"
+                android:textSize="14sp"
+                android:textColor="#000000"/>
+
+            <EditText
+                android:id="@+id/et_roll_no"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@drawable/edit_text_outline"
+                android:hint="Roll Number"
+                android:padding="8dp"
+                android:textColor="#000000"
+                android:textColorHint="#000000" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_marginStart="4dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Division"
+                android:textSize="14sp"
+                android:textColor="#000000"/>
+
+            <EditText
+                android:id="@+id/et_division"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@drawable/edit_text_outline"
+                android:hint="Division"
+                android:padding="8dp"
+                android:textColor="#000000"
+                android:textColorHint="#000000" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="8dp">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_marginEnd="4dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Select Department"
+                android:textSize="14sp"
+                android:textColor="#000000"/>
+
+            <Spinner
+                android:id="@+id/sp_department"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+            android:background="@drawable/spinner_outline"
+            android:popupBackground="@android:color/white"
+            android:textColor="#000000"
+            android:theme="@style/SpinnerTheme" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_marginStart="4dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Select Semester"
+                android:textSize="14sp"
+                android:textColor="#000000"/>
+
+            <Spinner
+                android:id="@+id/sp_semester"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+            android:background="@drawable/spinner_outline"
+            android:popupBackground="@android:color/white"
+            android:textColor="#000000"
+            android:theme="@style/SpinnerTheme" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_course_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select number of courses for KT payment"
+        android:textSize="16sp"
+        android:textColor="#000000"
+        android:layout_marginBottom="8dp"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_one_course"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="1 Course - ₹295"
+        android:textSize="14sp"
+        android:textAllCaps="false"
+        app:cornerRadius="8dp"
+        android:layout_marginBottom="4dp"
+        android:backgroundTint="#000000"
+        android:textColor="#FFFFFF"
+        android:padding="8dp"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_two_courses"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="2 Courses - ₹495"
+        android:textSize="14sp"
+        android:textAllCaps="false"
+        app:cornerRadius="8dp"
+        android:layout_marginBottom="4dp"
+        android:backgroundTint="#000000"
+        android:textColor="#FFFFFF"
+        android:padding="8dp"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_more_courses"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="More than 2 Courses - ₹995"
+        android:textSize="14sp"
+        android:textAllCaps="false"
+        app:cornerRadius="8dp"
+        android:layout_marginBottom="4dp"
+        android:backgroundTint="#000000"
+        android:textColor="#FFFFFF"
+        android:padding="8dp"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_photocopy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Photocopy - ₹50/Course"
+        android:textSize="14sp"
+        android:textAllCaps="false"
+        app:cornerRadius="8dp"
+        android:layout_marginBottom="4dp"
+        android:backgroundTint="#000000"
+        android:textColor="#FFFFFF"
+        android:padding="8dp"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_revaluation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Revaluation - ₹250/Course"
+        android:textSize="14sp"
+        android:textAllCaps="false"
+        app:cornerRadius="8dp"
+        android:layout_marginBottom="4dp"
+        android:backgroundTint="#000000"
+        android:textColor="#FFFFFF"
+        android:padding="8dp"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_back"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Back"
+        android:textSize="14sp"
+        android:textAllCaps="false"
+        app:cornerRadius="8dp"
+        android:backgroundTint="#000000"
+        android:textColor="#FFFFFF"
+        android:padding="8dp"/>
+    <Button
+        android:id="@+id/btn_view_receipt_history"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="View Receipt History" />
+</LinearLayout>

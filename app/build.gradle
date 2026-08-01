@@ -1,0 +1,94 @@
+plugins {
+    id 'com.android.application'
+    id 'com.google.gms.google-services'
+}
+
+android {
+    compileSdk 36
+    buildToolsVersion "35.0.0"
+
+    defaultConfig {
+        applicationId "com.example.login"
+        minSdkVersion 23
+        targetSdkVersion 35
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    namespace 'com.example.login'
+
+    packagingOptions {
+        exclude 'META-INF/DEPENDENCIES'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/NOTICE'
+    }
+}
+
+dependencies {
+    // Core AndroidX libraries
+    implementation 'androidx.core:core:1.9.0'
+    implementation 'androidx.appcompat:appcompat:1.7.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    implementation 'androidx.recyclerview:recyclerview:1.2.1'
+    implementation 'androidx.cardview:cardview:1.0.0'
+
+    // Google Material Design
+    implementation 'com.google.android.material:material:1.12.0'
+
+    // Firebase
+    implementation platform('com.google.firebase:firebase-bom:32.2.0')
+    implementation 'com.google.firebase:firebase-auth'
+    implementation 'com.google.firebase:firebase-inappmessaging-display:21.0.0'
+
+    // Google Authentication
+    implementation 'com.google.android.gms:play-services-auth:20.5.0'
+
+    // PDFBox for PDF handling
+    implementation 'org.apache.pdfbox:pdfbox:2.0.0'
+
+    // Excel Handling
+    implementation 'net.sourceforge.jexcelapi:jxl:2.6.12'
+
+    // Networking Libraries
+    implementation 'com.squareup.okhttp3:okhttp:4.9.3'
+    implementation 'com.squareup.retrofit2:retrofit:2.9.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
+    implementation 'com.android.volley:volley:1.2.1'
+    implementation 'com.google.code.gson:gson:2.8.8'
+
+    // Razorpay for payments
+    implementation 'com.razorpay:checkout:1.6.20'
+
+    // Charting Library
+    implementation 'com.github.PhilJay:MPAndroidChart:v3.1.0'
+
+    // Circle Image View
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+
+    // JSON Parsing
+    implementation 'org.json:json:20210307'
+
+    // GIF Support
+    implementation 'pl.droidsonroids.gif:android-gif-drawable:1.2.25'
+
+    // Android Testing Libraries
+    androidTestImplementation 'androidx.test.ext:junit:1.2.1'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.6.1'
+
+    // Local Libraries (if needed)
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+}

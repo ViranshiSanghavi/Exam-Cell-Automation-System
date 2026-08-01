@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:paddingBottom="20dp">
+
+    <!-- Leaderboard Title -->
+    <TextView
+        android:id="@+id/leaderboardTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Students Marks Leaderboard"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:gravity="center"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="20dp"/>
+
+    <!-- Podium Layout (Centered) -->
+    <LinearLayout
+        android:id="@+id/topPlayersContainer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:padding="10dp"
+        app:layout_constraintTop_toBottomOf="@id/leaderboardTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="20dp">
+
+        <!-- Second Place -->
+        <LinearLayout
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp">
+            <ImageView
+                android:id="@+id/secondPlace"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/default_avatar"
+                android:scaleType="centerCrop"/>
+            <TextView
+                android:id="@+id/secondPlaceRank"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2nd Place 🥈"
+                android:textSize="12sp"
+                android:textColor="@android:color/black"/>
+            <TextView
+                android:id="@+id/secondPlaceName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Viranshi"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"/>
+            <TextView
+                android:id="@+id/secondPlacePoints"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="450 mks"
+                android:textSize="12sp"
+                android:textColor="@android:color/black"/>
+            <!-- Podium Stage -->
+            <View
+                android:layout_width="50dp"
+                android:layout_height="40dp"
+                android:background="@android:color/darker_gray"/>
+        </LinearLayout>
+
+        <!-- First Place -->
+        <LinearLayout
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp">
+            <ImageView
+                android:id="@+id/firstPlace"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/default_avatar"
+                android:scaleType="centerCrop"/>
+            <TextView
+                android:id="@+id/firstPlaceRank"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1st Place 🏆"
+                android:textSize="14sp"
+                android:textColor="@android:color/black"
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/firstPlaceName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Devanshi"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"/>
+            <TextView
+                android:id="@+id/firstPlacePoints"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="456 mks"
+                android:textSize="14sp"
+                android:textColor="@android:color/black"/>
+            <!-- Podium Stage -->
+            <View
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:background="@android:color/darker_gray"/>
+        </LinearLayout>
+
+        <!-- Third Place -->
+        <LinearLayout
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/thirdPlace"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/default_avatar"
+                android:scaleType="centerCrop"/>
+            <TextView
+                android:id="@+id/thirdPlaceRank"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3rd Place 🥉"
+                android:textSize="12sp"
+                android:textColor="@android:color/black"/>
+            <TextView
+                android:id="@+id/thirdPlaceName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Deep"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"/>
+            <TextView
+                android:id="@+id/thirdPlacePoints"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="440 mks"
+                android:textSize="12sp"
+                android:textColor="@android:color/black"/>
+            <!-- Podium Stage -->
+            <View
+                android:layout_width="50dp"
+                android:layout_height="30dp"
+                android:background="@android:color/darker_gray"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Leaderboard List -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewLeaderboard"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:paddingBottom="20dp"
+        app:layout_constraintTop_toBottomOf="@id/topPlayersContainer"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="20dp"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
