@@ -24,14 +24,36 @@ An Android application that streamlines examination management for educational i
 - **OpenAI (ChatGPT API)**
 
 ## 📱 Screenshots
-| Student Login | Student Dashboard |
-|---------------|-------------------|
-| ![](screenshots/student_login.png) | ![](screenshots/student_dashboard.png) |
 
-| Student Result | KT Payment |
-|---------------|------------|
-| ![](screenshots/student_result.png) | ![](screenshots/kt_payment.png) |
+<table>
+  <tr>
+    <th>Profile</th>
+    <th>Student Login</th>
+    <th>Student Dashboard</th>
+  </tr>
+  <tr>
+    <td><img src="screenshots/Profile.png" width="220"/></td>
+    <td><img src="screenshots/Student%20Login.png" width="220"/></td>
+    <td><img src="screenshots/Student%20Dashboard.png" width="220"/></td>
+  </tr>
 
-| Teacher Dashboard | Admin Dashboard |
-|-------------------|-----------------|
-| ![](screenshots/teacher_dashboard.png) | ![](screenshots/admin_dashboard.png) |
+  <tr>
+    <th>Student Result</th>
+    <th>KT Payment</th>
+    <th>Teacher Dashboard</th>
+  </tr>
+  <tr>
+    <td><img src="screenshots/Student%20Result.png" width="220"/></td>
+    <td><img src="screenshots/KT%20Payment.png" width="220"/></td>
+    <td><img src="screenshots/Teacher%20Dashboard.png" width="220"/></td>
+  </tr>
+
+  <tr>
+    <th colspan="3">Admin Dashboard</th>
+  </tr>
+  <tr>
+    <td colspan="3" align="center">
+      <img src="screenshots/Admin%20Dashboard.png" width="220"/>
+    </td>
+  </tr>
+</table>
